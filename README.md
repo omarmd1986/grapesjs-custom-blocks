@@ -1,0 +1,84 @@
+## Summary
+
+* Plugin name: `gjs-custom-blocks`
+
+
+## Options
+
+|Option|Description|Default|
+|-|-|-
+|`textCleanCanvas`|Confirm text to clean the canvas|`Are you sure you want to clean the canvas?`|
+|`cleanBtnTitle`|The button's title|`Clean the canvas`|
+|`importBtnTitle`|The button's title|`Import`|
+|`undoBtnTitle`|The button's title|`Undo`|
+|`redoBtnTitle`|The button's title|`Redo`|
+|`modalImportLabel`|mport description inside import modal|``|
+|`modalImportContent`|Default content to setup on import model open.|``|
+|`modalImportButton`|Modal import button text|`Import`|
+|`modalImportTitle`|Modal import title|`Import`|
+
+
+## Download
+
+* NPM
+  * `npm i grapesjs-custom-blocks`
+* GIT
+  * `git clone https://github.com/omarmd1986/grapesjs-custom-blocks.git`
+
+
+## Usage
+
+```html
+<link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet"/>
+<script src="https://unpkg.com/grapesjs"></script>
+<script src="path/to/grapesjs-custom-blocks.min.js"></script>
+
+<div id="gjs"></div>
+
+<script type="text/javascript">
+  var editor = grapesjs.init({
+      container : '#gjs',
+      ...
+      plugins: ['gjs-custom-blocks'],
+      pluginsOpts: {
+        'gjs-custom-blocks': {
+          // options
+        }
+      }
+  });
+</script>
+```
+
+
+
+## Development
+
+Clone the repository
+
+```sh
+$ git clone https://github.com/omarmd1986/grapesjs-plugin-actions.git
+$ cd grapesjs-plugin-actions
+```
+
+Install dependencies
+
+```sh
+$ npm i
+```
+
+The plugin relies on GrapesJS via `peerDependencies` so you have to install it manually (without adding it to package.json)
+
+```sh
+$ npm i grapesjs --no-save
+```
+
+Start the dev server
+
+```sh
+$ npm start
+```
+
+
+## License
+
+BSD 3-Clause
