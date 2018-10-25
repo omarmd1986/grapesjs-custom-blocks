@@ -1,6 +1,6 @@
 {
   "name": "grapesjs-custom-blocks",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "GrapesJS Plugin to import custom blocks",
   "main": "dist/grapesjs-custom-blocks.min.js",
   "scripts": {
